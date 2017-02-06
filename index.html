@@ -3,24 +3,24 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta name="description" content="ectronic frontiers radio with dark tones of idm, glitch, drone, sometimes techno and experimental music" />
+        <meta name="keywords" content="idm, glitch, drone, experimental, techno, radio, listen online" />
         <title>idm radio</title>
     </head>
     <body>
       <section>
          <header>
             <h1><span class="curl">{</span>idm<span class="curl">}</span>radio</h1>
-            <p>we're coming soon, to your speaker</p>
+            <p class="currently_playing">we're coming soon, to your speaker</p>
             <div class="player">
-               <audio controls autoplay="autoplay"><source src="http://stream.idmradio.net:8000/stream?type=.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
-               <div class="currently_playing"></div>
+               <audio controls autoplay="autoplay">
+                  <source src="http://stream.idmradio.net:8000/stream?type=.mp3" type="audio/mp3" />
+               </audio>
             </div>
          </header>
          <div class="app"></div>
       </section>
-        <script
-          src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-          integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-          crossorigin="anonymous">
-        </script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
